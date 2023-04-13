@@ -8,7 +8,7 @@
     Copyright 2020, Imperavi Ltd.
     License: MIT
 */
-Vue.component('article-editor', {
+export default {
     template: '<textarea ref="article" :name="name" :placeholder="placeholder" :value="value" />',
     article: false,
     props: {
@@ -68,4 +68,4 @@ Vue.component('article-editor', {
             this.$emit('input', val);
         }
     }
-});
+};
